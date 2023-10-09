@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Cinema Masters</title>
+    <!--Importing List of Torrents -->
+    <script src="./movies-master/lists.js"></script>
+    <!-- Importing CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- To add:
+
+    Internet Archive: Movie Librarys
+    https://archive.org/details/feature_films?and%5B%5D=mediatype%3A%22collection%22
+
+    Cinema of the Third Reich
+    magnet:?xt=urn:btih:5badb97e71fd398a946719657086af4082c4af1d&dn=cttrh&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2F47.ip-51-68-199.eu%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker3.itzmx.com%3A6961%2Fannounce&tr=http%3A%2F%2Fopen.acgnxtracker.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.ds.is%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710
+
+    Based fashy 30s and 40s Movies
+    magnet:?xt=urn:btih:9b99792a0cbb755342660dfc35c591a09340e09c&dn=Based%20%26%20Redpilled%20Pack&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969
+
+    Die 40s German Television
+    magnet:?xt=urn:btih:46d8c2e0c46a840f93f7efa777c34155cd5e09c3&dn=Die%20Deutsche%20Wochenschau&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fretracker.lanta-net.ru%3A2710%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce
+
+    Godzila Collection
+    magnet:?xt=urn:btih:b20728b602b46202596b15eeb6a1f35439327288&dn=Godzilla&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969
+
+    Kubrick Complete Works
+    magnet:?xt=urn:btih:694b80a1752d9d4efda3d06a421d07d73fc416df&dn=%5FSTANLEY%20KUBRICK%5F&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Ftracker.ccc.de%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337
+
+    Meatball Machine (2005)
+    magnet:?xt=urn:btih:E305E2F6E2352F0111D846CFB86922D7B33175E9&dn=Meatball%20Machine%20(JPN%20action%2Fs-f%2Fgore)%20(2005)&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce
+
+    Gakuryū Ishii - Electric Dragon: 80,000 Volts (2001)
+    magnet:?xt=urn:btih:99FEE90919739884859BBDCF1D369C492254525C&dn=Electric%20Dragon%2080.000%20Volts&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce
+
+    Quentin Tarantino - Complete Works
+    magnet:?xt=urn:btih:dc30dd77b925f4784e3145bf8ed6d5f0d9e0f361&dn=The%20Quentin%20Tarantino%20Collection%20%281992-2019%29&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2F47.ip-51-68-199.eu%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce
+
+    Death Powder (1986)
+    magnet:?xt=urn:btih:7B9CA5447F34E4F9DB93489AAAB3DABA3E9F2938&dn=Death.Powder.%26.Burst.City.VHSRiP.DivX&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce
+
+    964 Pinocchio (1991)
+    magnet:?xt=urn:btih:1BEDE1B4A2E4AA60D4C9A0255B5E30BA6985619F&dn=964%20Pinocchio%20(1992%2C%20Shozin%20Fukui)&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce
+
+
+    Tetsuo: The Iron Man (1989)
+    magnet:?xt=urn:btih:82DEBF8597DBCE9724B6FA7124BD9CAAD4B46AF5&dn=Tetsuo.The.Iron.Man.1989.720p.BluRay.x264-CiNEFiLE%20%5BPublicHD%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2780%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2730%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce
+
+-->
+
+    <h1 style="text-align: center; margin-top: 7%">Cinema Masters</h1>
+    <div id="charts"></div>
+
+    <script>
+        
+      function renderLists() {
+        const chartsDiv = document.getElementById("charts");
+        let html = "";
+
+        for (const listName in ListsCreated) {
+          if (ListsCreated.hasOwnProperty(listName)) {
+            html += `<hr><h3>${listName}</h3><ul>`;
+            const listItems = ListsCreated[listName];
+
+            listItems.forEach((item) => {
+              html += `<a href="./${listName}/${item}" target="_blank"><li>${item}</li></a>`;
+            });
+
+            html += "</ul>";
+          }
+        }
+
+        chartsDiv.innerHTML = html;
+      }
+
+      renderLists();
+    </script>
+
+</body>
+
+</html>
