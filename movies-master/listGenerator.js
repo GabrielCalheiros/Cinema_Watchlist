@@ -47,7 +47,7 @@ function generateArrays(rootDir) {
 }
 
 // Generate the single JavaScript array with subarrays
-const outputFileName = 'lists.js';
+const outputFileName = 'lists2.js';
 const outputPath = path.join(rootDirectory, outputFileName);
 const listsContent = generateArrays(rootDirectory);
 
