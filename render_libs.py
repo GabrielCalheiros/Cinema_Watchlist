@@ -55,9 +55,12 @@ for sheet_name in excel_data.sheet_names:
     
     index_html += f'\n<li><a href="{file_name}">{sheet_name}</a></li>'
     
+    # Organize by year
+    df = df.sort_values(by="Year")
+    
     # Group by the "Category" column
     grouped = df.groupby("Category")
-    
+        
     # Iterate through each category and its rows
     for category, group in grouped:
         
@@ -65,14 +68,27 @@ for sheet_name in excel_data.sheet_names:
         
         for index, row in group.iterrows():
             
+            year, director, author = "", "", ""
+            
             # If Year is filled
             if not pd.isna(row["Year"]):
-                year = f'<code>[{row["Year"]}]</code>'
-            else:
-                year = ""
+                year = f'<code>[Year: {int(row["Year"])}]</code>'
+                
+            # Check if collumn "Author" exists
+            if "Director" in row.index:
+                if not pd.isna(row["Director"]):
+                    author = f'<code>[Director: {row["Director"]}]</code>'
+        
+            # Check if collumn "Author" exists
+            if "Author" in row.index:
+                if not pd.isna(row["Author"]):
+                    author = f'<code>[Author: {row["Author"]}]</code>'
+
+
+
             
             print(f"Adding {row['Title']} to {category}...")
-            html += f'\n        <li><a href="{row["Magnetic Link"]}" target="_blank">{year} {row["Title"]}</a></li>'
+            html += f'\n        <li><a href="{row["Magnetic Link"]}" target="_blank">{row["Title"]} {year} {director} {author}</a></li>'
         
         html += "\n</ul>"
     html += "\n</body></html>"
