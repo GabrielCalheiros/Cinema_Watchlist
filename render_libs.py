@@ -16,12 +16,9 @@ index_html = """
     
     <body>
         <br>
-        <h1 style="margin-bottom: 5px;">Personal Archive
-        </h1>
-        
+        <h1 style="margin-bottom: 5px;">Personal Archive</h1>
         <hr><br><ul>
 """
-
 
 # Iterate through each sheet in the Excel file
 for sheet_name in excel_data.sheet_names:
@@ -51,9 +48,11 @@ for sheet_name in excel_data.sheet_names:
         </h1>
         
         <hr><br>
+        
     """
     
-    index_html += f'\n<li><a href="{file_name}">{sheet_name}</a></li>'
+    index_html += f'''
+        <li><a href="{file_name}">{sheet_name}</a></li>'''
     
     # Organize by year
     df = df.sort_values(by="Year")
@@ -64,15 +63,16 @@ for sheet_name in excel_data.sheet_names:
     # Iterate through each category and its rows
     for category, group in grouped:
         
-        html += f"    <h2>{category}</h2><ul>"
+        html += f"\n    <h2>{category}</h2><ul>"
         
         for index, row in group.iterrows():
             
             year, director, author = "", "", ""
             
             # If Year is filled
-            if not pd.isna(row["Year"]):
-                year = f'<code>[Year: {int(row["Year"])}]</code>'
+            if "Year" in row.index:
+                if not pd.isna(row["Year"]):
+                    year = f'<code>[Year: {int(row["Year"])}]</code>'
                 
             # Check if collumn "Author" exists
             if "Director" in row.index:
@@ -83,12 +83,9 @@ for sheet_name in excel_data.sheet_names:
             if "Author" in row.index:
                 if not pd.isna(row["Author"]):
                     author = f'<code>[Author: {row["Author"]}]</code>'
-
-
-
             
             print(f"Adding {row['Title']} to {category}...")
-            html += f'\n        <li><a href="{row["Magnetic Link"]}" target="_blank">{row["Title"]} {year} {director} {author}</a></li>'
+            html += f'\n        <li><a href="{row["Magnetic Link"]}" target="_blank">{year} {row["Title"]} {director} {author}</a></li>'
         
         html += "\n</ul>"
     html += "\n</body></html>"
