@@ -5,4 +5,4 @@
 
 The result of some skraping, this is a list to help the build of my future server, and in the meenwhile it functions as my watchlist.
 
-Acess the repo: [https://github.com/gabrielcalheiros/Cinema_Recommendations](https://github.com/gabrielcalheiros/Cinema_Recommendations)
+Acess the repo: [https://gabrielcalheiros.github.io/Cinema_Watchlist/](https://gabrielcalheiros.github.io/Cinema_Watchlist/)
