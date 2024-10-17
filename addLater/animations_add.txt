@@ -8,13 +8,13 @@ Yozhik v Tumane
 Skazka Skazok
 Kontrakt 1985
 
-<li><a href="magnet:?xt=urn:btih:eaef02d32977bd77707c28ccba00b040d515030b&dn=Hanna-Barbera%20MegaPack&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Feddie4.nl%3A6969&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969&tr=udp%3A%2F%2Fopentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337">
-Hanna-Barbera MegaPack</a></li>
+<li>
+<a href="magnet:?xt=urn:btih:eaef02d32977bd77707c28ccba00b040d515030b&dn=Hanna-Barbera%20MegaPack&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Feddie4.nl%3A6969&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969&tr=udp%3A%2F%2Fopentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337">
+Hanna-Barbera MegaPack</a>
+</li>
 
 Song of the sea
-Street of Crocodiles
 Feherlofia, 
-Tale of Tales, 
 Alice, 
 It's Such a Beautiful Day, 
 Mind Game, 
@@ -54,5 +54,46 @@ Genius Party
 Genius Party beyond
 Secret of NIMH
 Mary and Max
-Prince Achmed
 Patrick Bokanowski
+
+
+1. Stop-Motion & Experimental Animation
+These types add variety and bring a tactile, artistic feel:
+
+    The Nightmare Before Christmas (1993) – Tim Burton's cult classic.
+    Coraline (2009) – A darker stop-motion tale by Laika Studios.
+
+2. Western Cult & Alternative Animations
+Adding a few more Western animations known for niche appeal:
+
+    Anomalisa (2015) – Stop-motion for adults, directed by Charlie Kaufman.
+    The Triplets of Belleville (2003) – French animation with quirky storytelling.
+
+3. Eastern European Gems
+Adding more from Soviet and Eastern European animation traditions:
+
+    Tale of Tales (1979) – By Yuri Norstein, considered one of the greatest animated shorts.
+    The Old Man and the Sea (1999) – A Russian-Canadian production using unique oil-paint-on-glass techniques.
+
+4. Japanese Animation (Lesser-Known Titles)
+Your list includes many Ghibli films and key anime classics. Consider these underrated or cult entries:
+
+    Mind Game (2004) – Directed by Masaaki Yuasa, a surreal cult masterpiece.
+    A Thousand and One Nights (1969) and Cleopatra (1970) are listed, but more 70s/80s gems could be included:
+    Night on the Galactic Railroad (1985) – A melancholic, philosophical anime.
+    Tamala 2010: A Punk Cat in Space (2002) – An underground sci-fi gem.
+    Tekkonkinkreet (2006) – A unique, visual anime film directed by Michael Arias.
+
+5. Modern Adult Animation
+Recent animations with cult followings or serious artistic merit:
+
+    The Spine of Night (2021) – A modern take on adult animation with a style inspired by Bakshi's work.
+    Loving Vincent (2017) – An oil-painted animation on the life of Van Gogh.
+    I Lost My Body (2019) – A French film combining surrealism and emotional storytelling.
+
+6. Sci-Fi and Cyberpunk Additions
+You already have Ghost in the Shell and Akira, but sci-fi/cyberpunk could be enhanced:
+
+    A Scanner Darkly (2006) – A trippy adaptation of Philip K. Dick’s novel.
+    Redline (2009) – A high-octane, cult-favorite sci-fi anime.
+
