@@ -13,7 +13,7 @@ index_html = """
         <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
         <link rel="stylesheet" href="./assets/style.css">
     </head>
-    
+
     <body>
         <br>
         <h1 style="margin-bottom: 5px;">Personal Archive</h1>
@@ -22,13 +22,13 @@ index_html = """
 
 # Iterate through each sheet in the Excel file
 for sheet_name in excel_data.sheet_names:
-    
+
     print(f"Processing sheet: {sheet_name}")
-    
+
     df = pd.read_excel(excel_data, sheet_name=sheet_name)
-    
+
     file_name = f"{sheet_name}.html"
-    
+
     html = f"""
     <head>
         <meta charset="UTF-8">
@@ -38,7 +38,7 @@ for sheet_name in excel_data.sheet_names:
         <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
         <link rel="stylesheet" href="./assets/style.css">
     </head>
-    
+
     <body>
         <br>
         <h1 style="margin-bottom: 5px;">{sheet_name}
@@ -46,54 +46,60 @@ for sheet_name in excel_data.sheet_names:
                 <span style="font-size: 20px; float: right;">⇦ Back to Index</span>
             </a>
         </h1>
-        
+
         <hr><br>
-        
     """
-    
+
     index_html += f'''
         <li><a href="{file_name}">{sheet_name}</a></li>'''
-    
+
     # Organize by year
     df = df.sort_values(by="Year")
-    
+
     # Group by the "Category" column
     grouped = df.groupby("Category")
-        
+
     # Iterate through each category and its rows
     for category, group in grouped:
-        
+
         html += f"\n    <h2>{category}</h2><ul>"
-        
+
         for index, row in group.iterrows():
-            
+
             year, director, author = "", "", ""
-            
+
             # If Year is filled
             if "Year" in row.index:
                 if not pd.isna(row["Year"]):
                     year = f'<code>[Year: {int(row["Year"])}]</code>'
-                
+
             # Check if collumn "Author" exists
             if "Director" in row.index:
                 if not pd.isna(row["Director"]):
                     author = f'<code>[Director: {row["Director"]}]</code>'
-        
+
             # Check if collumn "Author" exists
             if "Author" in row.index:
                 if not pd.isna(row["Author"]):
                     author = f'<code>[Author: {row["Author"]}]</code>'
-            
+
             print(f"Adding {row['Title']} to {category}...")
-            html += f'\n        <li><a href="{row["Magnetic Link"]}" target="_blank">{year} {row["Title"]} {director} {author}</a></li>'
-        
+            html += f'''
+                <li>
+                    <input type="checkbox" class="print-checkbox">
+                    <a href="{row["Magnetic Link"]}" target="_blank">
+                        {year} {row["Title"]} {director} {author}
+                    </a>
+                </li>
+            '''
+
         html += "\n</ul>"
     html += "\n</body></html>"
-    
+
     # Save the HTML file with UTF-8 encoding
     with open(file_name, 'w', encoding='utf-8') as f:
         f.write(html)
-        
+
 index_html += "\n</ul></body></html>"
 
 # SAVE THE INDEX HTML

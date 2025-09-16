@@ -6,6 +6,26 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* If printing, change body width */
+
+@media print {
+    body {
+        width: 90%;
+        margin-left: 5%;
+    }
+    a, hr, p, li, a:visited, .print-checkbox, a:link, body{
+        color: black;
+    }
+    h2, span{
+        display: none;
+    }
+    ul{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -27,3 +47,13 @@ hr {
 ul{
     columns: 1;
 }
+
+li{
+    list-style-type: none;
+}
+
+.print-checkbox {
+    margin-right: 8px;
+    transform: scale(1.2); /* makes checkbox a bit larger */
+}
+
